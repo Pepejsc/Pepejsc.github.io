@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="signup1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LOGIN</h1>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <form id="login-form">
+      <div class="form-group">
+        <input type="text" id="username" name="username" placeholder = "Email" required >
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder = "Password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Iniciar sesión</button><br>
+        <p>
+            ¿No tienes cuenta aùn?
+            <a href="https://www.mozilla.org/es-ES/">Registrar nuevo usuario</a>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <!--script src="script.js"></!--script-->
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPGgkivRpjNShKbfRFbmMQGgLFP9GBvDM",
+      authDomain: "seriesappweb.firebaseapp.com",
+      projectId: "seriesappweb",
+      storageBucket: "seriesappweb.appspot.com",
+      messagingSenderId: "476760980602",
+      appId: "1:476760980602:web:766df9b5789d8d227e4fc3"
+    };
+    
+    const email = "edison.sanchez02@epn.edu.ec";
+    const password = "12345678";
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+  </script>
+</html>
